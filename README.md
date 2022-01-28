@@ -1,2 +1,2 @@
-# CreattiveProjectHP
+# CreativeProjectHP
 Houses of Provo!
