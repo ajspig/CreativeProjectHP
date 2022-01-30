@@ -1,0 +1,70 @@
+.px-0{
+	padding-right: 0!important;
+	padding-left: 0!important;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Poppins, sans-serif;
+}
+body{
+	/* background-image: url(/images/BackgroupImageTutorial/background-photo-mobile-devices.jpeg);
+	background-position: center;
+	background-size: cover; */
+	background-color: #000;
+	box-sizing: border-box;
+	position: relative;
+	color: #fff;
+}
+
+.container{
+	/* my goal is to get my background-image to work in here, not quite there yet :( */
+	/* background-image: url(/images/BackgroupImageTutorial/background-photo-mobile-devices.jpeg);
+	background-position: center;
+	background-size: cover; */
+	height: 100vh;
+	width: 100%;
+	
+}
+.fixed-top{
+	position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.navbar{
+	position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.text-center{
+	text-align: center!important;
+}
+.title {
+    font-size: 4em;
+    font-weight: 700;
+}
+.text-muted {
+	padding: 10px;
+    --bs-text-opacity: 1;
+    color: #6c757d!important;
+}
+@media only screen and (min-wdith: 430px) and (max-width: 960px){
+	.navbar{
+		position: relative;
+		--bs-bg-opacity:1;
+		background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
+	}
+}
+@media only screen and (min-width: 430px) and (max-width: 960px){
+	.text.index h2, h3 {
+    	padding: 10px 0;
+	}
+}	
