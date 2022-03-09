@@ -28,6 +28,8 @@ function addMarker(location, map) {
     map: map,
   });
 }
+
+//For JS quiz
 const Questions = [{
   id: 0,
   q: "When was Provo first settled?",

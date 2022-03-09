@@ -1,8 +1,17 @@
-let map;
+const button = document.querySelector(".beginning button");
+const jokeDiv = document.querySelector(".beginning .joke p");
 
-function initMap() {
-  map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: -34.397, lng: 150.644 },
-    zoom: 8,
+document.addEventListener("DOMContentLoaded", getJoke);
+
+button.addEventListener("click", getJoke);
+
+async function getJoke() {
+  const jokeData = await fetch("https://icanhazdadjoke.com/", {
+    headers: {
+      Accept: "application/json"
+    }
   });
+  const jokeObj = await jokeData.json();
+  jokeDiv.innerHTML = jokeObj.joke;
+  console.log(jokeData);
 }
